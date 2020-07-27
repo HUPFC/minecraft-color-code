@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的世界分节字符格式化代码</title>
+    <script src="lib/jquery.1.9.1.js"></script>
+    <script src="lib/jquery.minecraft-cc.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/jquery.minecraft-cc.css"/>
+</head>
+<style>
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+    }
+    #test{
+        margin: 0 auto;
+        height: 100px;
+        width: 800px;
+        background-color: #ebebeb;
+        display: block;
+    }
+    .show{
+        margin: 0 auto;
+        height: auto;
+        min-height: 100px;
+        width: 800px;
+        background-color: #ebebeb;
+        display: block;
+    }
+</style>
+<body>
+<div id="test">
+    §n§1Minecraft Form§ratting
+
+    <div class="§0">§r§00 §11 §22 §33</div>
+    <a>§44 §55 §66 §77</a>
+    <span>§88</span> §99 §aa §bb
+    §cc §dd §ee §ff
+    <input type="submit">
+    §r§0k §kMinecraft
+    §rl §lMinecraft
+    §rm §mMinecraft
+    §rn §nMinecraft
+    §ro §oMinecraft
+    §rr §rMinecraft
+</div>
+<div class="show">
+
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('#test').minercraft_color_format('.show')
+    })
+</script>
